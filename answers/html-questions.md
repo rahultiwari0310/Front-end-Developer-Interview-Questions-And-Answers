@@ -61,7 +61,7 @@ attributes, or other hacks like that.
 
 #### Why is it generally a good idea to position CSS `<link>`s between `<head></head>` and JS `<script>`s just before `</body>`? Do you know any exceptions?
 
-*Not answered yet*
+If your script file is heavy and it takes time to download then including it inside `<head></head>` will stop rendering while the script is being downloaded and user may leave the webpage by then. So it is a better idea to include your css in head and script at the bottom, so that atleast static parts of the page are ready for the user.
 
 #### What is progressive rendering?
 
